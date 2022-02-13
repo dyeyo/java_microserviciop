@@ -1,0 +1,17 @@
+server:
+  port:8081
+#archivos de configuracion
+spring:
+  cloud:
+    config:
+      server:
+        git: https://github.com/dyeyo/java_microserviciop.git
+        searchPaths: config-data
+        usernmame: ${GIT_USER}
+        password: ${GIT_PASS}
+    security:
+      user:
+        name: root
+        password: s3cret
+
+
